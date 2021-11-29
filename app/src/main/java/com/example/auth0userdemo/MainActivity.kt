@@ -72,92 +72,23 @@ class MainActivity : AppCompatActivity() {
                     cachedCredentials = credentials
                     showSnackBar(getString(R.string.login_success_message, credentials.accessToken))
 
-                    getUserProfile()
+                    // TODO: Get the user’s profile information
+
                     updateUI()
                 }
             })
     }
 
     private fun getUserProfile() {
-        // Guard against showing the profile the user isn’t logged in
-        if (cachedCredentials == null) {
-            return
-        }
-
-        val client = AuthenticationAPIClient(account)
-        client
-            .userInfo(cachedCredentials!!.accessToken!!)
-            .start(object : Callback<UserProfile, AuthenticationException> {
-
-                override fun onFailure(exception: AuthenticationException) {
-                    showSnackBar(getString(R.string.general_failure_with_exception_code,
-                        exception.getCode()))
-                }
-
-                override fun onSuccess(userProfile: UserProfile) {
-                    cachedUserProfile = userProfile
-                    getUserMetadata()
-                    updateUI()
-                }
-
-            })
+        // TODO: Implement this method!
     }
 
     private fun getUserMetadata() {
-        // Guard against getting the metadata when no user is logged in
-        if (cachedCredentials == null || cachedUserProfile == null) {
-            return
-        }
-
-        val usersClient = UsersAPIClient(account, cachedCredentials!!.accessToken!!)
-
-        usersClient
-            .getProfile(cachedUserProfile!!.getId()!!)
-            .start(object : Callback<UserProfile, ManagementException> {
-
-                override fun onFailure(exception: ManagementException) {
-                    showSnackBar(getString(R.string.general_failure_with_exception_code,
-                        exception.getCode()))
-                }
-
-                override fun onSuccess(userProfile: UserProfile) {
-                    cachedUserProfile = userProfile
-                    updateUI()
-                }
-
-            })
+        // TODO: Implement this method!
     }
 
     private fun setUserMetadata() {
-        // Guard against getting the metadata when no user is logged in
-        if (cachedCredentials == null) {
-            return
-        }
-
-        val usersClient = UsersAPIClient(account, cachedCredentials!!.accessToken!!)
-        val metadata = mapOf(
-            "country" to binding.countryEdittext.text.toString().trim(),
-            "favorite_color" to binding.favoriteColorEdittext.text.toString().trim()
-        )
-
-        usersClient
-            .updateMetadata(cachedUserProfile!!.getId()!!, metadata)
-            .start(object : Callback<UserProfile, ManagementException> {
-
-                override fun onFailure(exception: ManagementException) {
-                    showSnackBar(getString(
-                        R.string.general_failure_with_exception_code,
-                        exception.getCode()
-                    ))
-                }
-
-                override fun onSuccess(profile: UserProfile) {
-                    cachedUserProfile = profile
-                    updateUI()
-                    showSnackBar(getString(R.string.general_success_message))
-                }
-
-            })
+        // TODO: Implement this method!
     }
 
     private fun updateUI() {
