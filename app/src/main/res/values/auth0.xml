@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+
+    Auth0 identifiers
+    ===========================
+
+    Your tenant’s domain and your app client ID grant access to your Auth0 tenant.
+    Don’t check this file into public version control without sanitizing its values first!
+
+    -->
+
+    <string name="com_auth0_domain">Insert your Auth0 tenant’s domain here.</string>
+    <string name="com_auth0_client_id">Insert your app’s Auth0 client ID here.</string>
+
+</resources>

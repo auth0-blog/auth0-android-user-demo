@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.auth0.android:auth0:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c10a1bbaca6e56370a4241908d054cc8/transformed/jetified-auth0-2.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c10a1bbaca6e56370a4241908d054cc8/transformed/jetified-auth0-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c10a1bbaca6e56370a4241908d054cc8/transformed/jetified-auth0-2.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.auth0.android/auth0/2.0.0/fab119dbc699190433d5fe2efdbfbde4e1c90b87/auth0-2.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.auth0.android/auth0/2.0.0/33299e70f1dca014b621378fdf8c1c81a7b90e9/auth0-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

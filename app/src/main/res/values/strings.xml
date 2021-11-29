@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Auth0 User Demo</string>
+
+    <!--
+
+    Auth0 settings
+    ==============
+
+    -->
+
+    <!-- Settings -->
+    <string name="com_auth0_scheme">app</string>
+    <string name="login_scopes">openid profile email read:current_user update:current_user_metadata</string>
+    <string name="login_audience">https://%1$s/api/v2/</string>
+
+
+    <!--
+
+    Main activity
+    =============
+
+    -->
+
+    <!-- Title -->
+    <string name="initial_title">Welcome to the app!</string>
+    <string name="logged_in_title">You\'re logged in.</string>
+    <string name="logged_out_title">You\'re logged out.</string>
+
+    <!-- "Log in", "Log out", and "Refresh" buttons -->
+    <string name="login_button">Log in</string>
+    <string name="logout_button">Log out</string>
+    <string name="refresh_button">Refresh</string>
+
+    <!-- Defaults -->
+    <string name="initial_display_value">---</string>
+
+    <!-- "User data" section -->
+    <string name="user_data_section_heading">User Data</string>
+    <string name="user_name_heading">name</string>
+    <string name="user_given_name_heading">givenName</string>
+    <string name="user_family_name_heading">familyName</string>
+    <string name="user_nickname_heading">nickname</string>
+    <string name="user_email_heading">email</string>
+    <string name="user_is_email_verified_heading">isEmailVerified</string>
+    <string name="user_picture_URL_heading">pictureURL</string>
+    <string name="user_created_at_heading">createdAt</string>
+    <string name="user_extra_info_heading">extra info</string>
+
+    <!-- "User metadata" section -->
+    <string name="user_metadata_section_heading">User Metadata</string>
+    <string name="user_metadata_heading">user_metadata</string>
+    <string name="metadata_instructions">Use the text boxes and the “Set user metadata” button below to edit the values in the user\'s metadata.</string>
+    <string name="country_heading">country</string>
+    <string name="country_edittext_hint">Enter your country</string>
+    <string name="favorite_color_heading">favorite_color</string>
+    <string name="favorite_color_edittext_hint">Enter your favorite color</string>
+    <string name="set_user_metadata_button">Set user metadata</string>
+
+    <!-- "App metadata" section -->
+    <string name="app_metadata_section_heading">App Metadata</string>
+    <string name="app_metadata_heading">app_metadata</string>
+
+    <!-- SnackBar messages-->
+    <string name="login_success_message">Successfully logged in! %1$s</string>
+    <string name="login_failure_message">Failed to log in. %1$s</string>
+    <string name="general_failure_with_exception_code">Failed - exception code: %1$s</string>
+    <string name="general_success_message">Success!</string>
+
+</resources>
